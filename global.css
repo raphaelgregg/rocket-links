@@ -1,5 +1,6 @@
 :root {
   --blue: #4263EB;
+  --dark-blue: #364FC7;
   --white: #FFFFFF;
   --background: #E5E5E5;
   --text: #00082F;
@@ -57,57 +58,78 @@ li {
 
 /* CUSTOM CSS*/
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+  text-align: center;
+  width: 18.75rem;
+  margin: 60px auto;
 }
 
-.avatar {
+img {
+ width: 100%;
+}
+
+img.avatar {
+  border-radius: 50%;
   width: 6.25rem;
   height: 6.25rem;
-  border-radius: 100%;
-
   border: 4px solid var(--blue);
-  padding: 4px;
-
-  margin: 60px 0 27.7px;
+  padding: 3.7px;
 }
 
-.title {
+.name {
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.3438;
-  align-items: center;
-
-  margin-bottom: 8px;
+  color: var(--text);
+  margin-top: 24px;
+  /* margin-bottom: 8px; */
 }
 
-.subtitle {
-  font-size: 1.125rem;
+.username {
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+  color: var(--text);
+  opacity: 0.8;
+  font-size: 1.125rem;
   line-height: 1.6875;
-  align-items: center;
-
-  margin-bottom: 48px;
 }
 
 ul {
-  margin-bottom: 48px;
+  margin: 48px 0;
 }
 
-li {
+ul li a {
+  height: 53px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: var(--blue);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.3125rem;
+
+  margin-bottom: 1rem;
+  border-radius: 6px;
+
+  transition: background 0.4s;
+}
+
+ul li a:hover {
+  background: var(--dark-blue);
+}
+
+/* li {
+  
+  flex-direction: row;
+ 
   padding: 1rem 5rem;
   
 
   width: 18.75rem;
   height: 3.3125rem;
 
-  background: var(--blue);
   border-radius: 6px;
 }
 
@@ -126,11 +148,21 @@ li a {
   line-height: 1.3125rem;
   align-items: center;
   color: var(--white);
-}
+} */
 
 footer {
   font-weight: 500;
   size: 12px;
   line-height: 1rem;
-  color: rgba(0, 8, 47, 0.6);
+  opacity: 0.6;
+
+  transition: opacity 0.4s;
+}
+
+footer:hover {
+  opacity: 1
+}
+
+footer a {
+  color: var(--text);
 }

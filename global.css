@@ -1,8 +1,12 @@
 :root {
   --blue: #4263EB;
   --dark-blue: #364FC7;
+  --pink: #D6336C;
+  --dark-pink: #A61E4D;
   --white: #FFFFFF;
   --background: #E5E5E5;
+  --dark-pink-background: #1F000B;
+  --pink-background: #FFF0F6;
   --text: #00082F;
 }
 
@@ -26,7 +30,28 @@ html {
 body {
   background: var(--background);
   color: var(--text);
+  --primary: var(--blue);
+  --dark-primary: var(--dark-blue);
   webkit-font-smoothing: antialiased;
+}
+
+body.pink {
+  background: var(--pink-background);
+  color: var(--text);
+  --primary: var(--pink);
+  --dark-primary: var(--dark-pink);
+}
+
+body.dark-blue {
+  background: var(--text);
+  color: var(--white);
+}
+
+body.dark-pink {
+  background: var(--dark-pink-background);
+  color: var(--white);
+  --primary: var(--pink);
+  --dark-primary: var(--dark-pink);
 }
 
 body, input, textarea, select, button, p {
@@ -72,7 +97,7 @@ img.avatar {
   border-radius: 50%;
   width: 6.25rem;
   height: 6.25rem;
-  border: 4px solid var(--blue);
+  border: 4px solid var(--primary);
   padding: 3.7px;
 }
 
@@ -80,7 +105,7 @@ img.avatar {
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.3438;
-  color: var(--text);
+  /* color: var(--text); */
   margin-top: 24px;
   /* margin-bottom: 8px; */
 }
@@ -88,7 +113,7 @@ img.avatar {
 .username {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
-  color: var(--text);
+  /* color: var(--text); */
   opacity: 0.8;
   font-size: 1.125rem;
   line-height: 1.6875;
@@ -103,7 +128,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--blue);
+  background: var(--primary);
   color: var(--white);
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -117,7 +142,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background: var(--dark-blue);
+  background: var(--dark-primary);
 }
 
 /* li {
@@ -160,7 +185,7 @@ footer {
 }
 
 footer:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 footer a {

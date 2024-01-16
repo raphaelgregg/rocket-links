@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-  <img alt="RocketLinks" src=".github/rocket-links.png" width="100%">
+  <img alt="RocketLinks" src=".github/rocketlinks.png" width="100%">
 </p>
 
 <p align="center">

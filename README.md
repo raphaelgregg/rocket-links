@@ -3,11 +3,6 @@
   🚀 Rocket Links
 </h1>
 
-
-<p align="center">
-  <img alt="BeTheHero" src=".github/rocket-links.png" width="100%">
-</p>
-
 <p align="center">
   <a href="#evento">Evento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
